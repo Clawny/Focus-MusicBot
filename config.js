@@ -24,12 +24,12 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "Main Node", 
-			host: process.env.LAVALINK_HOST || "lavalink.triniumhost.com", 
-			port: parseInt(process.env.LAVALINK_PORT) || 4333, 
-			password: process.env.LAVALINK_PASSWORD || "free", 
+			host: process.env.LAVALINK_HOST || "lavalink.manp.is-a.dev", 
+			port: parseInt(process.env.LAVALINK_PORT) || 443, 
+			password: process.env.LAVALINK_PASSWORD || "youshallnotpass", 
 			retryAmount: 200, 
 			retryDelay: 40, 
-			secure: false, 
+			secure: true, // ⚠️ Must be true for port 443
 		},
 	],
 	embedColor: "#2f3136", 
