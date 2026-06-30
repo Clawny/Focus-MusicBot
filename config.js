@@ -5,7 +5,7 @@ module.exports = {
 	token: process.env.token || "", 
 	clientId: process.env.clientId || "", 
 	clientSecret: process.env.clientSecret || "", 
-	port: process.env.PORT || 4200, // Fixed: dynamically binds to Railway's port
+	port: process.env.PORT || 4200, 
 	scopes: ["identify", "guilds", "applications.commands"], 
 	inviteScopes: ["bot", "applications.commands"], 
 	serverDeafen: true, 
@@ -24,12 +24,12 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "Main Node", 
-			host: process.env.LAVALINK_HOST || "lava.link", // Fixed: Links to your variables
-			port: parseInt(process.env.LAVALINK_PORT) || 443, // Fixed: Uses secure port 443
-			password: process.env.LAVALINK_PASSWORD || "youshallnotpass", // Fixed: Links to your password
+			host: process.env.LAVALINK_HOST || "lavalink.triniumhost.com", 
+			port: parseInt(process.env.LAVALINK_PORT) || 4333, 
+			password: process.env.LAVALINK_PASSWORD || "free", 
 			retryAmount: 200, 
 			retryDelay: 40, 
-			secure: true, // Fixed: Must be true for lava.link on port 443
+			secure: false, 
 		},
 	],
 	embedColor: "#2f3136", 
